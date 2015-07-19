@@ -1,6 +1,6 @@
 <?php
 
-echo "Demo change";
+echo "aaDemo change";
 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../framework/yii.php';
