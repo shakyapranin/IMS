@@ -193,12 +193,12 @@ class User extends CActiveRecord
 	public function rules()
 	{
 		return array(
-			array('login, password, repeat_password, is_superadmin, email, email_password,email_signature', 'required'),
+			array('login, password, repeat_password, is_superadmin', 'required'),
 
                         array('login, password, is_superadmin', 'purgeXSS'),
 
                         array('password', 'compare', 'compareAttribute'=>'repeat_password'),
-			array('email','email'),
+
 			array('is_superadmin, active', 'numerical', 'integerOnly'=>true),
 			array('login', 'length', 'max'=>50),
 			array('login', 'unique'),

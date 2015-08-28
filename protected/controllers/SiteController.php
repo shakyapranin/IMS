@@ -2,6 +2,7 @@
 
 class SiteController extends Controller
 {
+
 	/**
 	 * Declares class-based actions.
 	 */
@@ -31,6 +32,8 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		//$this->render('index');
 		
+
+
 		if (! Yii::app()->user->isGuest&&!User::checkRole('isSuperAdmin')){
 		$currentUserHomePage=Yii::app()->request->baseUrl."/index.php/".User::getCurrentUserHomePage();
 					}
@@ -42,6 +45,7 @@ class SiteController extends Controller
 		
 		
 	}
+
 
 	/**
 	 * This is the action to handle external exceptions.

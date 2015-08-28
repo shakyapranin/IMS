@@ -66,7 +66,7 @@ class AuthController extends Controller
         public function actionRegistration()
         {
                 // If you want use this registration page, just delete "return false"
-                //return false;
+                return false;
 
 
                 if (! Yii::app()->user->isGuest) 

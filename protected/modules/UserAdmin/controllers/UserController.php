@@ -17,21 +17,6 @@ class UserController extends AdminDefaultController
 
                 if (isset($_POST['User']))
                 {
-				
-				
-				//Before encryption
-				var_dump($_POST['User']);die();
-				
-				// Simple two way encryption to store email password
-				$mail_password = $_POST['User']['email_password'];
-				$key = "ShardaIT";
-				
-				$encrypted = base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, md5($key), $mail_password, MCRYPT_MODE_CBC, md5(md5($key))));
-				$_POST['User']['email_password']=$encrypted;
-				
-				//After encryption
-				//var_dump($_POST['User']);
-				//die();
                         $model->attributes = $_POST['User'];
 
                         // Additional check. Only superadmin can create superadmins

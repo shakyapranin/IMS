@@ -2,7 +2,7 @@
 
 class AdminDefaultController extends Controller
 {
-	//public $layout = '//layouts/admin_layout';
+	public $layout = '//layouts/admin_layout';
         public $modelName;
         public $ajaxValidation = false;
 

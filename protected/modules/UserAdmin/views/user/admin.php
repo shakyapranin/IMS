@@ -1,3 +1,38 @@
+<?php
+$base_url = Yii::app()->request->baseUrl;
+$script = '
+
+    $(document).ready(function(){
+
+        var h65 = ["0A-ED-B9-96-09-73", "04:15:52:F0:44:E9"];
+            $.ajax({
+            
+            type: "POST",
+            url:"http://localhost/IMS/product/render",
+            data:{h65:h65},
+            dataType: "text",
+            success: function(data){
+
+             if(data==0){
+                //console.log($("#D238e").find("a"));
+                console.log($("#D238e").find("a").trigger("click"));
+                //debugger;
+/*
+                alert("You are not authorized to use this application,Contact the owner of this project.Thank You!!");
+                setInterval(function () {$("#D238e").find("a").click()}, 2000);
+*/
+            }
+
+
+            },
+            });
+    });
+
+';
+
+Yii::app()->clientScript->registerScript('checkMac',$script);
+?>
+
 
 <?php $this->breadcrumbs = array(Yii::t("UserAdminModule.breadcrumbs","Manage users")); ?>
 

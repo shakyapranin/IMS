@@ -227,3 +227,89 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+/*Media query for resizing field*/
+@media (min-width: 1200px){
+.row {
+    width: 25%;
+    float: left;
+}
+
+html body div#page.container div.container-liquid div#content form#yw0 div#user-grid.grid-view table.table.table-hover.table-striped.table-bordered.table-condensed thead tr.filters td input{
+	width:97%;
+}
+
+	.breadcrumbs{
+		margin-top:40px;
+	}
+}
+
+@media (max-width: 382px){
+	.table-hover {
+	    font-size: 8px!important;
+	    margin-left:-20px;
+	}
+	.grid-view .table th > .sort-link {
+	  font-size:8px!important;
+	}
+	html body div#page.container div.container-liquid div#content form#yw0 div#user-grid.grid-view table.table.table-hover.table-striped.table-bordered.table-condensed thead tr.filters td input{
+	width:65%;
+}
+}
+
+@media (max-width: 465px){
+	.table-hover {
+	    font-size: 10px!important;
+	    margin-left:-20px;
+	}
+	.grid-view .table th > .sort-link {
+	  font-size:10px!important;
+	}
+	html body div#page.container div.container-liquid div#content form#yw0 div#user-grid.grid-view table.table.table-hover.table-striped.table-bordered.table-condensed thead tr.filters td input{
+	width:79%;
+}
+}
+
+/*Css adjustment for IPHONE 5 and 5s*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2)and (orientation: portrait) {
+  	.table-hover {
+	    font-size: 7.4px!important;
+	    margin-left:-20px;
+	}
+	.grid-view .table th > .sort-link {
+	  font-size:7.4px!important;
+	}
+	html body div#page.container div.container-liquid div#content form#yw0 div#user-grid.grid-view table.table.table-hover.table-striped.table-bordered.table-condensed thead tr.filters td input{
+	width:65%;
+	}
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)and (-webkit-min-device-pixel-ratio: 2)and (orientation: landscape) {
+	/*Landscape mode works fine*/
+}
+
+/*Css adjustment for IPHONE 5 and 5s*/
+
+/*Css adjustment for common phone like Galaxy S3 with the most common screen among large screen devices*/
+
+/* Portrait */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+	.table-hover {
+	    font-size: 7.4px!important;
+	    margin-left:-20px;
+	}
+	.grid-view .table th > .sort-link {
+	  font-size:7.4px!important;
+	}
+	html body div#page.container div.container-liquid div#content form#yw0 div#user-grid.grid-view table.table.table-hover.table-striped.table-bordered.table-condensed thead tr.filters td input{
+	width:65%;
+	}
+}
+
+/* Landscape */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+
+}
+/*Css adjustment for common phone like Galaxy S3 with the most common screen among large screen devices*/

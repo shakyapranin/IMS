@@ -59,41 +59,6 @@
                         <?php echo $form->error($model, 'repeat_password'); ?>
                 </div>
         </div>
-		
-		
-		<div class="control-group">
-		
-		        <?php echo $form->labelEx($model, 'email', array('class'=>'control-label')); ?>
-                <div class='controls'>
-                        <?php echo $form->textField($model, 'email', array('class'=>'input-xxlarge', 'autocomplete'=>'off','placeholder'=>'Use Gmail Accounts For Email ')); ?>
-                        <?php echo $form->error($model, 'email'); ?>
-                </div>
-			
-		
-		</div>
-		
-		<div class="control-group">
-		
-		        <?php echo $form->labelEx($model, 'email_password', array('class'=>'control-label')); ?>
-                <div class='controls'>
-                        <?php echo $form->textField($model, 'email_password', array('class'=>'input-xxlarge', 'autocomplete'=>'off')); ?>
-                        <?php echo $form->error($model, 'email_password'); ?>
-                </div>
-			
-		
-		</div>
-		
-		
-		<div class="control-group">
-		
-		        <?php echo $form->labelEx($model, 'email_signature', array('class'=>'control-label')); ?>
-                <div class='controls'>
-                        <?php echo $form->textArea($model, 'email_signature'); ?>
-                        <?php echo $form->error($model, 'email_signature'); ?>
-                </div>
-			
-		
-		</div>
 
         <br>
         <?php echo CHtml::htmlButton(
