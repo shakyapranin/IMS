@@ -35,11 +35,16 @@ class SiteController extends Controller
 
 
 		if (! Yii::app()->user->isGuest&&!User::checkRole('isSuperAdmin')){
+			if(!empty(User::getCurrentUserHomePage())){
 		$currentUserHomePage=Yii::app()->request->baseUrl."/index.php/".User::getCurrentUserHomePage();
+			}else{
+				$currentUserHomePage= Yii::app()->request->baseUrl."/index.php/UserAdmin/user/admin";
+			}
 					}
 				else{
 			$currentUserHomePage= Yii::app()->request->baseUrl."/index.php/UserAdmin/user/admin";
 				}
+
 		$this->redirect($currentUserHomePage);
 		
 		
