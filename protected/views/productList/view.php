@@ -15,7 +15,7 @@ $this->menu=array(
 ?>
 
 <h1><?php echo Yii::t('app', 'View') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
-
+<a href="<?php echo Yii::app()->createUrl('ProductList/ExcelExport?id=').$model->id;?>">Export into xls</a>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
 	'attributes' => array(

@@ -33,6 +33,7 @@
     <?php
     $productModel = new Product();
     ?>
+
     <div class="row">
         <?php echo CHtml::activeLabel($productModel, 'Product Id'); ?>
         <?php echo CHtml::activeTextField($productModel, 'id', array('id' => 'product_id_list')); ?>

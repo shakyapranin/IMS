@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.PHPExcel.PHPExcel',
 		
 		'ext.giix-components.*', // giix components
 		//useradmin modules components and models import
@@ -62,6 +63,7 @@ return array(
                 'allowAutoLogin'=>true,
                 'loginUrl'=>array('/UserAdmin/auth/login'),//useradmin extension
 		),
+
 		
 	    // yiistrap configuration
         'bootstrap' => array(
